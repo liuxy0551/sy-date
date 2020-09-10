@@ -195,4 +195,4 @@ class sydate extends Date {
   }
 }
 
-export default sydate
+module.exports = sydate

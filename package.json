@@ -1,6 +1,6 @@
 {
   "name": "sydate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "原生 Date 对象扩展",
   "main": "index.js",
   "scripts": {
