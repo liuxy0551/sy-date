@@ -1,31 +1,17 @@
 # sydate [![npm](https://img.shields.io/npm/v/sydate.svg?style=flat-square)](https://www.npmjs.com/package/sydate)
 
-sydate 原生 Date 对象扩展<br><br>
+sydate 原生 Date 对象扩展，node 模块<br><br>
 
 
 > 引入、使用 sydate
-
-建议在项目的 libs 文件夹下新建一个`native.js`，内容如下：
-```
-import sydate from 'syedu/packages/libs/native/sydate'
-
-window['RealDate'] = window.Date // 将原生的 Date 对象备份到 RealDate 属性上
-window.Date = sydate // 用 sydate 将 Date 属性覆盖
-```
-然后在`main.js`中引入即可
-```
-// main.js
-import '@/libs/native'
-```
-
-
-
 ### Demo
 ```
-console.log(new Date().year) // 2020
-console.log(new Date().month) // 8
-console.log(new Date().getNextDate.strftime()) // 2020-08-06 18:53:57
-console.log(new Date().getDateTime(-100).strftime('%Y/%M/%d %H:%m:%s')) // 2020/04/27 18:55:05
+const SyDate = require('sydate')
+
+console.log(new SyDate().year)  // 2020
+console.log(new SyDate().month) // 8
+console.log(new SyDate().getNextDate.strftime()) // 2020-08-06 18:53:57
+console.log(new SyDate().getDateTime(-100).strftime('%Y/%M/%d %H:%m:%s')) // 2020/04/27 18:55:05
 ```
 
 
